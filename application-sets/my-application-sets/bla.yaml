@@ -6,12 +6,12 @@ spec:
   generators:
     - matrix:
         generators:
-          - git:
+         - git:
               repoURL: https://github.com/malkiAttal/gitops-cert-level-2-examples.git
               revision: HEAD
               directories:
                 - path: ./application-sets/example-apps/*
-          - clusters: {}
+         - clusters: {}
   template:
     metadata:
       name: '{{path.basename}}-{{name}}'
